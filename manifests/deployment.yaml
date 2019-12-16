@@ -4,7 +4,7 @@ metadata:
   name: webhook
   labels:
     app: dialog-flow
-  namespace: dialog-flow
+  #namespace: dialog-flow
 spec:
   replicas: 1
   selector:
