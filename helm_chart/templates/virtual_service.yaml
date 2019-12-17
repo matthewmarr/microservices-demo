@@ -1,0 +1,18 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: {{ include "helm_chart.fullname" . }}
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - dialog-flow-gateway
+  http:
+  - match:
+    - uri:
+        prefix: "/"
+    route:
+    - destination:
+        host: {{ include "helm_chart.fullname" . }}.default.svc.cluster.local
+        port:
+          number: {{ .Values.service.port }}
