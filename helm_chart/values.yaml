@@ -5,8 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: gcr.io/andresolarte-istio-pg/time-lady
-  tag: 93a7deb
+  #repository: gcr.io/andresolarte-istio-pg/time-lady
+  #tag: 93a7deb
+  repository: gcr.io/mmarr-test-project/github.com/matthewmarr/microservices-demo
+  tag: c2fa2d7 
   pullPolicy: IfNotPresent
 
 service:
