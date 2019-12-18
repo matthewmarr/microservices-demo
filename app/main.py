@@ -12,20 +12,10 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-import requests
-
 from flask import Flask
 from flask import render_template
 
 app = Flask(__name__)
-retry = Retry(
-  total=5,
-  read=5,
-  connect=5,
-  backoff_factor=0.3,
-  status_forcelist=(000, 500)
-)
-
 
 @app.route('/')
 @app.route('/index')
