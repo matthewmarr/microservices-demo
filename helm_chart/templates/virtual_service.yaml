@@ -4,7 +4,7 @@ metadata:
   name: {{ include "helm_chart.fullname" . }}
 spec:
   hosts:
-  - "hello-world.mytest.com"
+  - "hello-world.gscout.xyz"
   gateways:
   - dialog-flow-gateway
   http:
