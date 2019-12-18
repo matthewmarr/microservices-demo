@@ -13,6 +13,6 @@ spec:
         prefix: "/"
     route:
     - destination:
-        host: {{ include "helm_chart.fullname" . }}.default.svc.cluster.local
+        host: {{ include "helm_chart.fullname" . }}
         port:
           number: {{ .Values.service.port }}
