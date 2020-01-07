@@ -3,8 +3,6 @@ kind: Deployment
 metadata:
   name: hello-world
   namespace: hello-world
-  annotations:
-    sidecar.istio.io/inject: "true"
 spec:
   replicas: 1
   selector:
@@ -21,6 +19,8 @@ spec:
       labels:
         app.kubernetes.io/instance: hello-world
         app.kubernetes.io/name: hello-world
+      annotations:
+        sidecar.istio.io/inject: "true"
     spec:
       containers:
       - image: gcr.io/mmarr-test-project/hello-world:latest
