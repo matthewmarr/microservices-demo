@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/name: hello-world
     spec:
       containers:
-      - image: gcr.io/mmarr-test-project/github.com/matthewmarr/microservices-demo:latest
+      - image: gcr.io/mmarr-test-project/hello-world:latest
         imagePullPolicy: IfNotPresent
         name: hello-world
         ports:
