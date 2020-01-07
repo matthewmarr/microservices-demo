@@ -5,4 +5,4 @@ resources:
 - deployment.yaml
 images:
 - name: gcr.io/mmarr-test-project/hello-world
-  newTag: "1.0"
+  newTag: 288dc8493278d250599977e22c01203e21ecae0d
