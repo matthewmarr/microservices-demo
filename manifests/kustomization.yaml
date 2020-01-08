@@ -7,4 +7,4 @@ resources:
 - virtual_service.yaml
 images:
 - name: gcr.io/mmarr-test-project/hello-world
-  newTag: 6234b60f00fc8b64bf2eec87f3396db70c6d2c14
+  newTag: 002ffe1f6abaaff50e60c671ade498628b3e59da
